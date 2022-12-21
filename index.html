@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEVATED HEALTH</title>
+    <link rel="stylesheet" href="styles (1) (2).css">
+    <script src="scriptt.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero-section">
+        <header class="global-header mw">
+                  <div class="logo">Elevated Health ♡ </div>
+                  <img src="photo_6129417355508430182_x (1).jpg" width="75 px" height="75 px">
+        </header>
+        <div class="hi">
+          <p>Please Select Your Location.</p>
+          <!--<p>in Bangalore!</p>-->
+        </div>
+        <p class="jk">To get information about the hospitals in your location!</p>
+        <form id="booking_form" class="booking-container mw">
+          <div class="inputs-wrapper">
+            <div class="input-container">
+                <label for="from_city">Location</label>
+                  <select name="from_city" id="from_city" >
+                    <option>
+                        None
+                    </option>
+                    <option>
+                      ATTIGUPPE
+                    </option>
+                    <option>
+                      ANJANAPURA
+                    </option>
+                    <option>
+                        BASAVANAGUDI
+                    </option>
+                    <option>BANASHANKARI</option>
+                    <option>
+                      BAIYYAPANAHALLI
+                    </option>
+                    <option>
+                      CHICKPETE
+                    </option>
+                    <option>
+                      DODDAKALSANDRA
+                    </option>
+                    <option>
+                      DASARAHALLI
+                    </option>
+                    <option>
+                    DEEPANJALINAGAR
+                    </option>
+                    <option>
+                    ELECTRONIC CITY
+                    </option>
+                    <option>
+                    FRAZER TOWN
+                    </option>
+                    <option>
+                    GORAGUNTEPALYA
+                    </option>
+                    <option>
+                  GANDHI BAZAR
+                    </option>
+                    <option>
+                  GIRINAGAR
+                    </option>
+                    <option>
+                  HANUMANTHANAGAR
+                    </option>
+                    <option>
+                  HEBBAL
+                    </option>
+                    <option>
+                  INDIRANAGAR
+                    </option>
+                    <option>
+                  ITTAMADU
+                    </option>
+                    <option>
+                  JALAHALLI
+                    </option>
+                    <option>
+                JAYANAGAR
+                    </option>
+                    <option>
+                JP NAGAR
+                    </option>
+                    <option>
+                KR MARKET
+                    </option>
+                    <option>
+                KONANAKUNTE 
+                    </option>
+                    <option>
+                KENGERI
+                    </option>
+                    <option >
+                MAJESTIC
+                    </option>
+                    <option>
+                MAHALAKSHMI LAYOUT
+                    </option>
+                    <option>
+              MAGDI ROAD
+                    </option>
+                    <option>
+            MYSORE ROAD
+          </option>
+          <option>
+            NAYANDAHALLI
+          </option>
+          <option>
+            NAGARBHAVI
+        </option>
+        <option>
+          NAGSANDRA
+        </option>
+        <option>
+          PEENYA
+      </option>
+      <option>
+        RAJAJINAGAR
+      </option>
+      <option>
+        RR NAGAR
+      </option>
+      <option>
+        RAJAJINAGAR
+      </option>
+      <option>
+        SOUTH END CIRCLE
+      </option>
+       <option>
+        SRI RAMPURA
+        </option>  
+        <option>
+          TURAHALLI
+      </option> 
+      <option>
+        THYAGARAJANAGAR
+      </option>
+        <option>
+          UTTARAHALLI
+      </option>         
+<option>
+  VIJAYANAGAR
+</option>
+<option>
+  VAJARAHALLI
+</option>
+<option>
+  WHITEFIELD
+</option>
+<option>
+  YESHWANTHAPUR
+</option>
+<option>
+  YELACHENAHALLI
+</option>
+                  </select>
+                </div>
+          </div>
+          
+          <div class="search-button-container">
+            <p id="hg"></p>
+           <button type="button" id="submit_button" class="primary-button" onclick="SelectRedirect()" >
+              Search Hospitals
+              
+            </button>
+            <script>
+              function SelectRedirect(){
+// ON selection of section this function will work
+//alert( document.getElementById('s1').value);
+
+switch(document.getElementById('from_city').value)
+{
+case "HEBBAL":
+window.location="india.html";
+break;
+
+case "PEENYA":
+window.location="peenya.html";
+break;
+
+case "ATTIGUPPE":
+window.location="attiguppe.html";
+break;
+case "ANJANAPURA":
+window.location="anjanapura.html";
+break;
+
+case "BASAVANAGUDI":
+window.location="basavanagudi.html";
+break;
+case "BANASHANKARI":
+window.location="banashankari.html";
+break;
+case "BAIYYAPANAHALLI":
+window.location="baiyyapanahalli.html";
+break;
+case "CHICKPETE":
+window.location="chickpete.html";
+break;
+case "DODDAKALLASANDRA":
+window.location="doddakallasandra.html";
+break;
+case "RR NAGAR":
+window.location="rrnagar.html";
+break;
+case "SRI RAMPURA":
+window.location="srirampura.html";
+break;
+
+/// Can be extended to other different selections of SubCategory //////
+default:
+window.location="../"; // if no selection matches then redirected to home page
+break;
+}// end of switch 
+}
+//////////////////
+            </script>
+            <!--<p id="hg"></p>
+            <input type="button" class="primary-button" value=" Search Hospitals" onclick="harsha()"  />
+            <script>
+              function harsha()
+              {   
+                let color='red';
+                 let para=document.getElementById('hg');
+                 para.innerHTML = '20 beds';
+                 para.style.color=color;
+              }
+            </script>
+            <!--<input type="button" value="Search Hospitals" onclick="reset()"/>
+            <p id="counter"> </p> -->
+          </div>
+        </form>
+      </section>
+      <section id="list_section" class="list-section mw">
+    </section>
+  </main>
+  
+</body>
+</html>
